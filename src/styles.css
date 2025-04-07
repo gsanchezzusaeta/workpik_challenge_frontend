@@ -1,0 +1,60 @@
+html,
+body {
+  margin: 0 !important;
+  height: 100%;
+  width: 100%;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+#root {
+  width: 100%;
+  height: 100%;
+  spacing: 0;
+  justify: "space-around";
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 !important;
+  height: 100%;
+  width: 100%;
+}
+
+.box {
+  border-width: 1px;
+  border-color: rgb(160, 160, 160);
+  border-style: solid;
+}
+
+.palette {
+  position: absolute;
+  z-index: 100;
+  display: flex;
+  background-color: antiquewhite;
+  padding: 0.5rem;
+  border-radius: 10px;
+  border: 1px solid gray;
+  gap: 2px;
+  span {
+    border: 1px solid gray;
+    cursor: pointer;
+    width: 2rem;
+    border-radius: 10px;
+    height: 2rem;
+  }
+}
+
+.visible {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.2s linear;
+}
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s 0.2s, opacity 0.2s linear;
+}
